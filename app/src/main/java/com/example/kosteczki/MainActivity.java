@@ -46,35 +46,6 @@ public class MainActivity extends AppCompatActivity {
             kosc.view.setOnClickListener(view -> kosc.klikniecie_kosci());
         }
 
-//        kosc1 = findViewById(R.id.kostka1);
-//        kosc2 = findViewById(R.id.kostka2);
-//        kosc3 = findViewById(R.id.kostka3);
-//        kosc4 = findViewById(R.id.kostka4);
-//        kosc5 = findViewById(R.id.kostka5);
-//
-//        Kosc Kostka1 = new Kosc();
-//        Kosc Kostka2 = new Kosc();
-//        Kosc Kostka3 = new Kosc();
-//        Kosc Kostka4 = new Kosc();
-//        Kosc Kostka5 = new Kosc();
-//
-//        Kostka1.view = kosc1;
-//        Kostka2.view = kosc2;
-//        Kostka3.view = kosc3;
-//        Kostka4.view = kosc4;
-//        Kostka5.view = kosc5;
-//
-//
-//        kosci.add(Kostka1);
-//        kosci.add(Kostka2);
-//        kosci.add(Kostka3);
-//        kosci.add(Kostka4);
-//        kosci.add(Kostka5);
-//
-//        for (Kosc kosc : kosci) {
-//            kosc.view.setOnClickListener(view -> kosc.klikniecie_kosci());
-//        }
-
         rzut.setOnClickListener(view -> rzut(kosci));
     }
 
@@ -99,27 +70,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             suma += kosc.wartosc;
-
-//            switch (kosc.wartosc) {
-//                case 1:
-//                    kosc.view.setImageResource(R.drawable.kosc1);
-//                    break;
-//                case 2:
-//                    kosc.view.setImageResource(R.drawable.kosc2);
-//                    break;
-//                case 3:
-//                    kosc.view.setImageResource(R.drawable.kosc3);
-//                    break;
-//                case 4:
-//                    kosc.view.setImageResource(R.drawable.kosc4);
-//                    break;
-//                case 5:
-//                    kosc.view.setImageResource(R.drawable.kosc5);
-//                    break;
-//                case 6:
-//                    kosc.view.setImageResource(R.drawable.kosc6);
-//                    break;
-//            }
         }
 
         wynik.setText(String.valueOf(suma));
