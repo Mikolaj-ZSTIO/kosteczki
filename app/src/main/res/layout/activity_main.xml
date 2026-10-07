@@ -13,21 +13,20 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="163dp"
+		android:gravity="center"
 		android:orientation="horizontal">
 
 		<ImageView
 			android:id="@+id/kostka1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
 			android:layout_margin="10dp"
 			app:srcCompat="@drawable/kosc0" />
 
 		<ImageView
 			android:id="@+id/kostka2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
 			android:layout_margin="10dp"
 			app:srcCompat="@drawable/kosc0" />
 	</LinearLayout>
@@ -35,29 +34,27 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="160dp"
+		android:gravity="center"
 		android:orientation="horizontal">
 
 		<ImageView
 			android:id="@+id/kostka3"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
 			android:layout_margin="10dp"
 			app:srcCompat="@drawable/kosc0" />
 
 		<ImageView
 			android:id="@+id/kostka4"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
 			android:layout_margin="10dp"
 			app:srcCompat="@drawable/kosc0" />
 
 		<ImageView
 			android:id="@+id/kostka5"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
 			android:layout_margin="10dp"
 			app:srcCompat="@drawable/kosc0" />
 	</LinearLayout>
@@ -67,7 +64,7 @@
 		android:layout_width="100dp"
 		android:layout_height="wrap_content"
 		android:text="RZUT"
-		android:background="#ED275021"
+		android:backgroundTint="#ED275021"
 		android:layout_margin="10dp"
 		android:textSize="20dp" />
 

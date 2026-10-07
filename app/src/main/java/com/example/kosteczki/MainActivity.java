@@ -44,16 +44,16 @@ public class MainActivity extends AppCompatActivity {
         Kostka1.view = kosc1;
 
         Kosc Kostka2 = new Kosc();
-        Kostka1.view = kosc2;
+        Kostka2.view = kosc2;
 
         Kosc Kostka3 = new Kosc();
-        Kostka1.view = kosc3;
+        Kostka3.view = kosc3;
 
         Kosc Kostka4 = new Kosc();
-        Kostka1.view = kosc4;
+        Kostka4.view = kosc4;
 
         Kosc Kostka5 = new Kosc();
-        Kostka1.view = kosc5;
+        Kostka5.view = kosc5;
 
 
         List<Kosc> kosci = new ArrayList<>();
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         kosci.add(Kostka5);
 
         for (Kosc kosc : kosci) {
-            kosc.view.setOnClickListener(view -> klikniecie_kosci(kosc));
+            kosc.view.setOnClickListener(view -> kosc.klikniecie_kosci());
         }
 
         rzut.setOnClickListener(view -> rzut(kosci));
@@ -73,10 +73,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void rzut(List<Kosc> kosci) {
         Random random = new Random();
+        int suma = 0;
 
         for (Kosc kosc : kosci) {
+            if (!kosc.dostepna) {
+                suma += kosc.wartosc;
+                continue;
+            }
             kosc.wartosc = random.nextInt(6) + 1;
-
+            suma += kosc.wartosc;
             switch (kosc.wartosc) {
                 case 1:
                     kosc.view.setImageResource(R.drawable.kosc1);
@@ -98,9 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
-    }
 
-    private void klikniecie_kosci(Kosc kosc) {
-
+        wynik.setText(String.valueOf(suma));
     }
 }
